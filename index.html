@@ -1,30 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Eliminar cuenta - Aula Digital QR</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #f9f9f9; color: #333; }
-        h1 { color: #005bbb; }
-        a { color: #005bbb; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solicitud de eliminación de datos / cuenta – Aula Digital QR</title>
+  <style>
+    :root { --pri:#005bbb; --bg:#f7f9fb; --txt:#333; }
+    body { font-family: Arial, sans-serif; max-width: 880px; margin: 40px auto; padding: 24px; background: var(--bg); color: var(--txt); }
+    h1 { color: var(--pri); margin-bottom: .2rem; }
+    h2 { color: #1f3b57; margin-top: 1.6rem; }
+    p, li { line-height: 1.5; }
+    .box { background: #fff; border-radius: 10px; padding: 18px 20px; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+    a { color: var(--pri); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .muted { color:#6b7280; font-size:.95rem; }
+    ul { padding-left: 1.2rem; }
+  </style>
 </head>
 <body>
-    <h1>Solicitud de eliminación de cuenta - Aula Digital QR</h1>
-    <p><strong>Aula Digital QR</strong> no almacena datos en servidores propios. Toda la información que generas con la app (como hojas de cálculo, stickers personalizados y reportes en PDF) se guarda directamente en tu dispositivo o en tu cuenta personal de Google Drive.</p>
+  <header>
+    <h1>Solicitud de eliminación de datos / cuenta – Aula Digital QR</h1>
+    <p class="muted"><strong>Desarrollador:</strong> Ángel Arroyo Vargas &middot;
+      <strong>Última actualización:</strong> <time datetime="2025-08-13">13 de agosto de 2025</time>
+    </p>
+  </header>
 
-    <h2>¿Cómo puedes eliminar tus datos?</h2>
+  <section class="box">
+    <h2>Resumen</h2>
+    <p><strong>Aula Digital QR</strong> no almacena datos en servidores del desarrollador. Los datos que introduces (p. ej., hojas de cálculo, stickers/imágenes y reportes en PDF) se guardan <strong>en tu dispositivo</strong> o en <strong>tu cuenta de Google Drive/Sheets</strong>.</p>
+    <p>La comunicación con servicios de Google (Drive/Sheets/Sign-In) se realiza <strong>cifrada (HTTPS/TLS)</strong>. La app <strong>no comparte datos con terceros distintos de Google</strong>; sólo transmite la información necesaria para operar <em>tus propios archivos</em> en tu cuenta.</p>
+  </section>
+
+  <section class="box">
+    <h2>Qué datos se pueden borrar</h2>
     <ul>
-        <li>Desde tu cuenta de Google Drive, elimina la hoja de cálculo creada por la app.</li>
-        <li>Desde tu dispositivo, elimina manualmente los archivos PDF y las imágenes que hayas agregado como stickers.</li>
+      <li><strong>En el dispositivo:</strong> PDFs generados por la app e imágenes/stickers añadidos por el docente.</li>
+      <li><strong>En Google Drive/Sheets (en tu cuenta):</strong> hojas y archivos creados o gestionados con la app.</li>
     </ul>
 
-    <p>La app no tiene acceso permanente a estos datos ni los comparte con terceros. Todo permanece bajo tu control.</p>
+    <h2>Qué datos se conservan</h2>
+    <ul>
+      <li><strong>En servidores del desarrollador:</strong> ninguno (no hay backend propio).</li>
+      <li><strong>En Google (Drive/Sheets/Sign-In):</strong> permanecen bajo tu control y se rigen por las políticas de Google; puedes eliminarlos cuando quieras.</li>
+    </ul>
 
-    <h2>¿Necesitas ayuda?</h2>
-    <p>Si no estás seguro de qué archivos eliminar o necesitas asistencia, puedes escribirnos a:</p>
+    <h2>Períodos de retención</h2>
+    <ul>
+      <li><strong>Desarrollador:</strong> no aplica (no se retienen datos).</li>
+      <li><strong>Google Drive/Sheets:</strong> los determina el usuario (puedes borrar o conservar tus archivos en cualquier momento).</li>
+    </ul>
+  </section>
+
+  <section class="box">
+    <h2>Cómo eliminar tus datos (pasos)</h2>
+    <ol>
+      <li><strong>Borrar en Google Drive/Sheets:</strong> abre tu Google Drive y elimina las hojas/archivos creados con <em>Aula Digital QR</em>.</li>
+      <li><strong>Borrar en el dispositivo:</strong> elimina los <em>PDF</em> generados y las <em>imágenes/stickers</em> que hayas añadido.</li>
+      <li><strong>Revocar acceso de la app (opcional):</strong> en tu <em>Cuenta de Google</em> &rarr; <em>Seguridad</em> &rarr; <em>Acceso de terceros a la cuenta</em> &rarr; quita <em>Aula Digital QR</em>.</li>
+    </ol>
+    <p class="muted">Nota: si alguna hoja la configuraste como “pública/con enlace”, recuerda cambiar su visibilidad o eliminarla desde Drive.</p>
+  </section>
+
+  <section class="box">
+    <h2>Solicitudes y soporte</h2>
+    <p>Si necesitas ayuda para identificar o eliminar archivos, contáctanos:</p>
     <p><strong>Correo:</strong> <a href="mailto:aula.digital.proyecto@gmail.com">aula.digital.proyecto@gmail.com</a></p>
+  </section>
+
+  <footer class="muted" style="margin-top:18px">
+    <p>Aula Digital QR &middot; Página de eliminación de datos para Google Play Store.</p>
+  </footer>
 </body>
 </html>
